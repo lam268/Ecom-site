@@ -6,16 +6,20 @@ This is a very simple e-commerce website built with Django.
 
 The website displays products. Users can add and remove products to/from their cart while also specifying the quantity of each item. They can then enter their address and choose Stripe to handle the payment processing.
 
+![image](https://user-images.githubusercontent.com/52960249/90010386-f5499980-dcc9-11ea-948c-0a09301f6b35.png)
 
 
-## Usage
+## Running this project
 
-```python
-import foobar
+To get this project up and running you should start by having Python installed on your computer. 
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```
+$ sudo apt-get install python3.6
+```
+Now you can run the project with this command\
+
+```
+python manage.py runserver
 ```
 
 ## Contributing
