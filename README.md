@@ -1,29 +1,20 @@
-# Ecomerce Website
+# Django Project Boilerplate
 
-Foobar is a Python library for dealing with word pluralization.
+This repository is a boilerplate Django project for quickly getting started.
 
-## Installation
+[![alt text](https://github.com/justdjango/django_project_boilerplate/blob/master/thumbnail.png "Logo")](https://www.youtube.com/watch?v=GEogao-tUec)
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+## Getting started
 
-```bash
-pip install foobar
-```
+Steps:
 
-## Usage
+1. Clone/pull/download this repository
+2. Create a virtualenv with `virtualenv env` and install dependencies with `pip install -r requirements.txt`
+3. Configure your .env variables
+4. Rename your project with `python manage.py rename <yourprojectname> <newprojectname>`
 
-```python
-import foobar
+This project includes:
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+1. Settings modules for deploying with Azure
+2. Django commands for renaming your project and creating a superuser
+3. A cli tool for setting environment variables for deployment
