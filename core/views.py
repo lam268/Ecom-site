@@ -7,13 +7,13 @@ from .models import *
 
 class HomeView(ListView):
     model = Item
-    template_name = 'home-page.html'
+    template_name = 'home.html'
 
 class ProductDetailView(DetailView):
     model = Item
-    template_name = 'product-page.html'
+    template_name = 'product.html'
 
 
 def checkout(request):
     context = {}
-    return render(request,"checkout-page.html",context)
+    return render(request,"checkout.html",context)

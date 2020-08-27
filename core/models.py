@@ -9,8 +9,6 @@ CATEGORY_CHOICES = (
     ('FW', 'Footwear'), 
     ('A', 'Accessories'),
     ('C', 'Clothes'),
-    ('SW', 'Sportwears'),
-    ('S', 'Shirt')
 )
 
 LABEL_CHOICES = (
