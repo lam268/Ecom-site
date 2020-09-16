@@ -26,12 +26,19 @@ class Item(models.Model):
     label = models.CharField(choices = LABEL_CHOICES, max_length = 1)
     image = models.ImageField(null = True, blank = True)
     slug = models.SlugField()
+    description = models.TextField()
+    quantity = models.IntegerField(default = 1)
 
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
         return reverse('core:product', kwargs= {
+            'slug': self.slug,
+        })
+
+    def get_add_to_cart_url(self):
+        return reverse('core:add-to-cart', kwargs = {
             'slug': self.slug,
         })
 
@@ -45,7 +52,6 @@ class Item(models.Model):
 
 class OrderItem(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=0, null= True, blank= True)
     date_added = models.DateTimeField(auto_now_add=True)
 
     @property
